@@ -1,0 +1,145 @@
+
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MSA DataX Solutions – IT-Freelancer für digitale Lösungen">
+  <title>Kontakt – MSA DataX Solutions</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="/static/images/favicon.ico" type="image/x-icon">
+
+  <!-- Haupt-Stylesheet -->
+  <link rel="stylesheet" href="/static/css/style.css">
+
+  
+<link rel="stylesheet" href="/static/css/contact.css">
+
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Startseite</a></li>
+        <li><a href="/kontakt/">Kontakt</a></li>
+        <li><a href="/leistungen/">Leistungen</a></li>
+        <li><a href="/impressum/">Impressum</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+<section class="contact-section">
+  <div class="container">
+    <h1 class="section-title">Kontaktieren Sie uns</h1>
+    <p class="section-subtitle">Wir freuen uns auf Ihre Nachricht und melden uns schnellstmöglich zurück.</p>
+    
+    <div class="contact-grid">
+      <!-- Contact Information -->
+      <div class="contact-card info-card">
+        <h2><i class="fas fa-address-card"></i> Kontaktinformationen</h2>
+        <div class="contact-methods">
+          <a href="https://wa.me/493021463310" class="contact-method" target="_blank">
+            <div class="contact-icon whatsapp">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <div class="contact-details">
+              <span class="contact-label">WhatsApp</span>
+              <span class="contact-value">+49 30 21463310</span>
+            </div>
+          </a>
+          
+          <a href="mailto:info@moussa.de" class="contact-method">
+            <div class="contact-icon email">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <span class="contact-label">E-Mail</span>
+              <span class="contact-value">info@moussa.de</span>
+            </div>
+          </a>
+          
+          <div class="contact-method">
+            <div class="contact-icon phone">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-details">
+              <span class="contact-label">Telefon</span>
+              <span class="contact-value">+49 30 21463310</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="business-hours">
+          <h3><i class="far fa-clock"></i> Geschäftszeiten</h3>
+          <p>Montag - Freitag: 9:00 - 18:00 Uhr</p>
+          <p>Samstag - Sonntag: Geschlossen</p>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-card form-card">
+        <h2><i class="fas fa-paper-plane"></i> Kontaktformular</h2>
+        
+        
+
+        
+
+        <form id="contactForm" action="/kontakt/senden/" method="post" autocomplete="off" novalidate>
+          <input type="hidden" name="csrfmiddlewaretoken" value="72yiLHIeztmIOajzzxO7Bm9M4z9v4zkIWjXGQ8UEZDxUWft936YLRfxOkmSZ9GmV">
+          <div class="form-group">
+            <label for="id_name">Name *</label>
+            <input type="text" name="name" maxlength="100" required id="id_name">
+            <span class="error-message" id="nameError"></span>
+          </div>
+          
+          <div class="form-group">
+            <label for="id_email">E-Mail *</label>
+            <input type="email" name="email" maxlength="254" required id="id_email">
+            <span class="error-message" id="emailError"></span>
+          </div>
+          
+          <div class="form-group">
+            <label for="id_nachricht">Ihre Nachricht *</label>
+            <textarea name="nachricht" cols="40" rows="10" required id="id_nachricht">
+</textarea>
+            <span class="error-message" id="messageError"></span>
+          </div>
+          
+          <div class="form-group privacy-policy">
+            <input type="checkbox" id="privacyCheck" required>
+            <label for="privacyCheck">
+              Ich habe die <a href="/datenschutz/" target="_blank">Datenschutzerklärung</a> gelesen und akzeptiere sie. *
+            </label>
+          </div>
+          
+          <button type="submit" class="btn btn-primary" id="submitBtn">
+            <i class="fas fa-paper-plane"></i> Nachricht senden
+            <div class="spinner" id="submitSpinner"></div>
+          </button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="back-home">
+      <a href="/" class="btn btn-outline">
+        <i class="fas fa-arrow-left"></i> Zurück zur Startseite
+      </a>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 MSA DataX Solutions – Alle Rechte vorbehalten</p>
+  </footer>
+
+  
+<script src="/static/js/contact.js"></script>
+
+</body>
+</html>
