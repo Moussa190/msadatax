@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -9,160 +7,158 @@
   <title>MSA DataX Solutions – Freelance IT Experte</title>
 
   <!-- Favicon -->
-  <link rel="icon" href="/static/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="static/images/favicon.ico" type="image/x-icon">
 
   <!-- Haupt-Stylesheet -->
-  <link rel="stylesheet" href="/static/css/style.css">
-
-  
+  <link rel="stylesheet" href="static/css/style.css">
 </head>
+
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="/">Startseite</a></li>
-        <li><a href="/kontakt/">Kontakt</a></li>
-        <li><a href="/leistungen/">Leistungen</a></li>
-        <li><a href="/impressum/">Impressum</a></li>
-      </ul>
-    </nav>
+  <header class="main-nav">
+    <div class="container">
+        <a href="/" class="nav-logo">MSA DataX Solutions</a>
+        <button class="nav-burger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="main-nav-links">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+        <ul class="nav-links" id="main-nav-links">
+            <li><a href="/">Startseite</a></li>
+            <li><a href="/leistungen/">Leistungen</a></li>
+            <li><a href="/kontakt/">Kontakt</a></li>
+            <li><a href="/impressum/">Impressum</a></li>
+            <li><a href="/datenschutz/">Datenschutz</a></li>
+        </ul>
+    </div>
   </header>
 
   <main>
-    
-
-<!-- Hero Section -->
-<header class="hero">
-  <div class="hero__container">
-    <div class="hero__content">
-      <h1>Digitale <span class="text-gradient">Lösungen</span> für Ihren <span class="text-gradient">Erfolg</span></h1>
-      <p>Maßgeschneiderte IT-Lösungen, die Ihr Business voranbringen</p>
-    </div>
-  </div>
-</header>
-
-<!-- Services Section -->
-<section id="services" class="section section--tint section--divider-strong" aria-labelledby="services-title">
-  <div class="container">
-    <div class="section-header">
-      <h2 class="section-title" id="services-title">Meine Leistungen</h2>
-      <p class="section-description">Maßgeschneiderte Lösungen für Ihre digitalen Herausforderungen</p>
-    </div>
-
-    <div class="card-grid">
-      <div class="card fade-in-on-scroll">
-        <i class="fas fa-code icon" aria-hidden="true"></i>
-        <h3 class="card-title">Webentwicklung</h3>
-        <p class="card-text">Moderne Webanwendungen mit Python, Django &amp; React</p>
-        <ul class="service-features">
-          <li><i class="fas fa-check"></i> Responsive &amp; SEO-optimiert für bestmögliche Sichtbarkeit</li>
-          <li><i class="fas fa-check"></i> Schnelle Ladezeiten für optimale Nutzererfahrung</li>
-        </ul>
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="hero__container">
+        <div class="hero__content">
+          <h1>Digitale <span class="text-gradient">Lösungen</span> für Ihren <span class="text-gradient">Erfolg</span></h1>
+          <p>Maßgeschneiderte IT-Lösungen, die Ihr Business voranbringen</p>
+        </div>
       </div>
+    </header>
 
-      <div class="card fade-in-on-scroll" style="transition-delay: 0.1s;">
-        <i class="fas fa-robot icon" aria-hidden="true"></i>
-        <h3 class="card-title">KI & Automatisierung</h3>
-        <p class="card-text">KI-Modelle für präzise Analysen und Vorhersagen</p>
-        <ul class="service-features">
-          <li><i class="fas fa-check"></i> Automatisierte Workflows zur Effizienzsteigerung</li>
-          <li><i class="fas fa-check"></i> Prozessoptimierung durch intelligente Lösungen</li>
-        </ul>
+    <!-- Services Section -->
+    <section id="services" class="section section--tint section--divider-strong" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" id="services-title">Meine Leistungen</h2>
+          <p class="section-description">Maßgeschneiderte Lösungen für Ihre digitalen Herausforderungen</p>
+        </div>
+
+        <div class="card-grid">
+          <div class="card fade-in-on-scroll">
+            <i class="fas fa-code icon" aria-hidden="true"></i>
+            <h3 class="card-title">Webentwicklung</h3>
+            <p class="card-text">Moderne Webanwendungen mit Python, Django &amp; React</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Responsive &amp; SEO-optimiert für bestmögliche Sichtbarkeit</li>
+              <li><i class="fas fa-check"></i> Schnelle Ladezeiten für optimale Nutzererfahrung</li>
+            </ul>
+          </div>
+
+          <div class="card fade-in-on-scroll" style="transition-delay: 0.1s;">
+            <i class="fas fa-robot icon" aria-hidden="true"></i>
+            <h3 class="card-title">KI & Automatisierung</h3>
+            <p class="card-text">KI-Modelle für präzise Analysen und Vorhersagen</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Automatisierte Workflows zur Effizienzsteigerung</li>
+              <li><i class="fas fa-check"></i> Prozessoptimierung durch intelligente Lösungen</li>
+            </ul>
+          </div>
+
+          <div class="card fade-in-on-scroll" style="transition-delay: 0.2s;">
+            <i class="fas fa-user-tie icon" aria-hidden="true"></i>
+            <h3 class="card-title">IT‑Beratung</h3>
+            <p class="card-text">Strategische Beratung zu Infrastruktur &amp; Architektur</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Individuelles Systemdesign nach Ihren Anforderungen</li>
+              <li><i class="fas fa-check"></i> Optimierung von Abläufen &amp; Prozessen</li>
+            </ul>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="card fade-in-on-scroll" style="transition-delay: 0.2s;">
-        <i class="fas fa-user-tie icon" aria-hidden="true"></i>
-        <h3 class="card-title">IT‑Beratung</h3>
-        <p class="card-text">Strategische Beratung zu Infrastruktur &amp; Architektur</p>
-        <ul class="service-features">
-          <li><i class="fas fa-check"></i> Individuelles Systemdesign nach Ihren Anforderungen</li>
-          <li><i class="fas fa-check"></i> Optimierung von Abläufen &amp; Prozessen</li>
-        </ul>
+    <!-- Tech Stack Section -->
+    <section id="techstack" class="section">
+      <div class="container">
+        <h2 class="section-title">Tech-Stack & Tools</h2>
+        <p class="section-subtitle">Auswahl der Technologien, mit denen ich täglich arbeite.</p>
+
+        <div class="skills-groups">
+          <div class="skills-group">
+            <h3 class="skills-group-title">Frontend</h3>
+            <ul class="skills-chips">
+              <li class="skill-item">React</li>
+              <li class="skill-item">Next.js</li>
+              <li class="skill-item">HTML5</li>
+              <li class="skill-item">CSS3</li>
+              <li class="skill-item">Tailwind</li>
+            </ul>
+          </div>
+
+          <div class="skills-group">
+            <h3 class="skills-group-title">Backend</h3>
+            <ul class="skills-chips">
+              <li class="skill-item">Python</li>
+              <li class="skill-item">Django</li>
+              <li class="skill-item">FastAPI</li>
+              <li class="skill-item">Node.js</li>
+            </ul>
+          </div>
+
+          <div class="skills-group">
+            <h3 class="skills-group-title">Daten & KI</h3>
+            <ul class="skills-chips">
+              <li class="skill-item">SQL</li>
+              <li class="skill-item">PostgreSQL</li>
+              <li class="skill-item">NoSQL</li>
+              <li class="skill-item">Pandas</li>
+              <li class="skill-item">scikit-learn</li>
+            </ul>
+          </div>
+
+          <div class="skills-group">
+            <h3 class="skills-group-title">Cloud & DevOps</h3>
+            <ul class="skills-chips">
+              <li class="skill-item">Docker</li>
+              <li class="skill-item">Git/GitHub</li>
+              <li class="skill-item">CI/CD</li>
+              <li class="skill-item">Linux</li>
+              <li class="skill-item">Azure / AWS</li>
+            </ul>
+          </div>
+
+          <div class="skills-group">
+            <h3 class="skills-group-title">Qualität & Sicherheit</h3>
+            <ul class="skills-chips">
+              <li class="skill-item">Testing (PyTest/Jest)</li>
+              <li class="skill-item">Auth (OAuth2)</li>
+              <li class="skill-item">DSGVO</li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- Tech Stack Section -->
-<section id="techstack" class="section">
-  <div class="container">
-    <h2 class="section-title">Tech-Stack & Tools</h2>
-    <p class="section-subtitle">Auswahl der Technologien, mit denen ich täglich arbeite.</p>
-
-    <div class="skills-groups">
-      <div class="skills-group">
-        <h3 class="skills-group-title">Frontend</h3>
-        <ul class="skills-chips">
-          <li class="skill-item">React</li>
-          <li class="skill-item">Next.js</li>
-          <li class="skill-item">HTML5</li>
-          <li class="skill-item">CSS3</li>
-          <li class="skill-item">Tailwind</li>
-        </ul>
+    <!-- CTA Banner -->
+    <section id="cta" class="section cta-banner" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-banner__content">
+          <h2 class="cta-title" id="cta-title">Starten wir Ihr nächstes Projekt</h2>
+          <p class="cta-subtitle">Vereinbaren Sie jetzt Ihr kostenloses Beratungsgespräch und erhalten Sie in 30 Minuten konkrete Lösungsvorschläge.</p>
+        </div>
+        <a href="../kontakt/" class="btn btn-primary btn-lg">Jetzt Termin vereinbaren</a>
       </div>
-
-      <div class="skills-group">
-        <h3 class="skills-group-title">Backend</h3>
-        <ul class="skills-chips">
-          <li class="skill-item">Python</li>
-          <li class="skill-item">Django</li>
-          <li class="skill-item">FastAPI</li>
-          <li class="skill-item">Node.js</li>
-        </ul>
-      </div>
-
-      <div class="skills-group">
-        <h3 class="skills-group-title">Daten & KI</h3>
-        <ul class="skills-chips">
-          <li class="skill-item">SQL</li>
-          <li class="skill-item">PostgreSQL</li>
-          <li class="skill-item">NoSQL</li>
-          <li class="skill-item">Pandas</li>
-          <li class="skill-item">scikit-learn</li>
-        </ul>
-      </div>
-
-      <div class="skills-group">
-        <h3 class="skills-group-title">Cloud & DevOps</h3>
-        <ul class="skills-chips">
-          <li class="skill-item">Docker</li>
-          <li class="skill-item">Git/GitHub</li>
-          <li class="skill-item">CI/CD</li>
-          <li class="skill-item">Linux</li>
-          <li class="skill-item">Azure / AWS</li>
-        </ul>
-      </div>
-
-      <div class="skills-group">
-        <h3 class="skills-group-title">Qualität & Sicherheit</h3>
-        <ul class="skills-chips">
-          <li class="skill-item">Testing (PyTest/Jest)</li>
-          <li class="skill-item">Auth (OAuth2)</li>
-          <li class="skill-item">DSGVO</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA Banner -->
-<section id="cta" class="section cta-banner" aria-labelledby="cta-title">
-  <div class="container">
-    <div class="cta-banner__content">
-      <h2 class="cta-title" id="cta-title">Starten wir Ihr nächstes Projekt</h2>
-      <p class="cta-subtitle">Vereinbaren Sie jetzt Ihr kostenloses Beratungsgespräch und erhalten Sie in 30 Minuten konkrete Lösungsvorschläge.</p>
-    </div>
-    <a href="/kontakt/" class="btn btn-primary btn-lg">Jetzt Termin vereinbaren</a>
-  </div>
-</section>
-
-
+    </section>
   </main>
 
   <footer>
     <p>© 2025 MSA DataX Solutions – Alle Rechte vorbehalten</p>
   </footer>
-
-  
 </body>
 </html>
